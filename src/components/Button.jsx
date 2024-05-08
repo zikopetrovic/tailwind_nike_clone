@@ -7,7 +7,9 @@ const Button = ({ label, iconURL }) => {
     >
       {label}
 
-      <img className="ml-2 rounded-full w-5 h-5" src={iconURL} alt={label} />
+      {iconURL && (
+        <img className="ml-2 rounded-full w-5 h-5" src={iconURL} alt={label} />
+      )}
     </button>
   );
 };
